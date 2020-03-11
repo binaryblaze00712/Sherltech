@@ -1,0 +1,258 @@
+<html>
+<head>
+<title> SIGN UP </title>
+<meta name="viewport" content="width=device-width">
+
+<style>
+main {
+  max-width: 1300px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+	padding-bottom:50px;
+	padding-left:30px;
+	background-color:white
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: 20px;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+h2 { padding:15px;
+	 background-color:seablue;
+	 margin-right:20px;
+	 font-family:cooper black;
+	 color:peach;
+	 border-left:5px solid blue;
+	 border-radius:3px;
+	 
+}
+
+.flr{float:right;
+margin-right:20px;
+}
+
+.button1 {
+	height:30px;
+	width:100px;
+	background:blue;
+	border:0; 
+	padding-left:20px;
+	padding-right:20px;
+	margin:auto;
+	color:#ffffff;
+	border-radius:6px;
+}
+
+header {
+	text-align:center;
+	margin-right:20px;
+	background:#35424a;
+	border-bottom:3px blue;
+	font-family:Segoe UI Black;
+	text-transform:uppercase;
+	
+}
+
+h1{ padding-top:10px;
+	color:white;
+}
+
+input[type=text] {
+    width: 60%;
+    padding:4px;
+	border:2px solid slategrey;
+	border-radius:15px;
+	font-family:forte;
+	font-size:16px;
+	transition: width 0.4s ease-in-out;
+    
+}
+
+input[type=email] {
+    width: 60%;
+    padding:4px;
+	border:2px solid slategrey;
+	border-radius:15px;
+	font-family:forte;
+	font-size:16px;
+	
+}
+input[type=password] {
+    width: 60%;
+    padding:4px;
+    border:2px solid slategrey;
+	border-radius:15px;
+	font-family:forte;
+	font-size:16px;
+	
+}
+
+.rff {
+	font-family:Berlin Sans FB;
+	margin-left:6px;
+	line-height:20px;
+	
+}
+
+.font-change{
+	font-family: Segoe UI Black;
+	font-weight:bold;
+	font-size:18px;
+}
+
+section { padding-top:10px;
+}
+
+select {
+    width: 40%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+	font-family:arial black;
+	
+}
+
+textarea{
+	width: 80%;
+    padding:4px;
+    border:2px solid slategrey;
+	border-radius:15px;
+	font-family:forte;
+	font-size:16px;
+}
+
+footer{
+	padding:20px;
+	margin-top:20px;
+	color:#ffffff;
+	background-color:blue;
+	text-align:center;
+	font-size:20px;
+}
+</style>
+</head>
+<body bgcolor=black>
+
+<main>
+	<header>
+		<h1> Sign Up </h1> 
+	</header>
+	
+	
+	<section>
+	<h2> General Information </h2>
+	<!-- background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); -->
+		<form>
+			<span class="font-change">FIRST NAME :</span>
+			<input style="margin-left:35px;" type="text" name="student_name" placeholder="Enter Your First Name..."><br><br>
+			<span class="font-change">MIDDLE NAME :</span> 
+			<input style="margin-left:15px;" type="text" name="student_name" placeholder="Enter Your Middle Name..."><br><br>
+			<span class="font-change">LAST NAME :</span> 
+			<input style="margin-left:42px;" type="text" name="student_name" placeholder="Enter Your Last Name...">
+			<br>
+			<br>
+			<hr>
+			<span class="font-change">Date Of Birth :</span><br>
+			<input type="date" name="bday">
+			<br>
+			<br>
+			<hr>
+			
+			<span class="font-change">GENDER :</span><br>
+			<div class="rff">
+			<input type="radio" name="student_gender" value="Male">   Male<br>
+			<input type="radio" name="student_gender" value="Male">   Female<br>
+			<input type="radio" name="student_gender" value="Male">   Other<br>
+			</div>
+			<br>
+			<hr>
+			
+			<span class="font-change">LANGUAGES KNOWN:</span><br>
+			<div class="rff">
+			<input type="checkbox" name="student_languages" value="Hindi">   Hindi<br>
+			<input type="checkbox" name="student_languages" value="English">   English<br>
+			<input type="checkbox" name="student_languages" value="Regional">   Regional<br>
+			</div>
+			<br>
+			<br>
+			<hr>
+			
+			<span class="font-change">Courses:</span><br>
+			<select name="courses">
+				<option value="HTML">HTML</option>
+				<option value="CSS">CSS</option>
+				<option value=" JAVASCRIPT">JAVASCRIPT</option>
+				
+			</select>
+			<br>
+			<br>
+			<hr>
+			
+			<span class="font-change">ADDRESS:</span><br>
+			<textarea rows="4" cols="50"></textarea>
+			<br>
+			<br>
+			<br>
+			<span class="font-change">CITY :</span> 
+			<input style="margin-left:42px;" type="text" name="student_city" placeholder="City">
+			<br>
+			<br>
+			<span class="font-change">STATE :</span> 
+			<input style="margin-left:27px;" type="text" name="student_state" placeholder="state">
+			<br>
+			<br>
+			<hr>
+			
+			
+		</form>
+		
+		<h2>Login Information</h2>
+		<form>
+			<span class="font-change">USERNAME :</span><BR>
+			<input type="text" name="student_name" placeholder="Enter Your Username..."><br>
+			<br>
+			<hr>
+			<span class="font-change">EMAIL :</span><br>
+			<input type="email" name="student_email" placeholder="Enter Your email...">
+			<br>
+			<br>
+			<hr>
+			
+			<span class="font-change">PASSWORD :</span><br>
+			<input type="password" name="student_password" placeholder="Enter Your password...">
+			<br>
+			<br>
+			<hr>
+			<span class="font-change">RE-ENTER PASSWORD :</span><BR>
+			<input type="password" name="student_password" placeholder="Re-Enter Password..."><br>
+			<br>
+			<hr>
+			<span class="font-change">SECRET QUESTION :</span><BR>
+			<input type="text" name="student_name" placeholder="Enter Your Secret Question..."><br>
+			<br>
+			<hr>
+			<span class="font-change">SECRET ANSWER :</span><BR>
+			<input type="text" name="student_name" placeholder="Enter Your Secret Answer..."><br>
+			<br>
+			<br>
+			<hr>
+			
+			<input type="reset" class="button1" value="Reset">
+			<div class="flr"><a href="proj.html">click here</a></div>
+		</form>
+	<section>
+	
+</main>
+<footer>
+		<p> For Further queries, contact || SHERLTECH TECHNOLOGIES|| : 999xxxxxxx copyright &SHERLTECH TECH 2016 </p>
+	</footer>
+</body>
+</html>
